@@ -1,0 +1,60 @@
+
+.header {
+  background: url(../images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
+  padding: 30px 40px 0 40px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo_subtitle{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: $color-header-main;
+  margin: 0;
+  text-align: center;
+
+}
+
+.navigation__header a {
+  text-decoration: none;
+  color: $color-link-normal;
+}
+
+.navigation__header_line a{
+  border-bottom: 3px $color-primary solid;
+  padding: 4px 0;
+
+}
+
+.logo_title a{
+  font-family: 'Georgia', sans-serif;
+  color: $color-primary;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+}
+.logo_title{
+  margin: 0;
+}
+.navigation {
+  display: flex;
+}
+.navigation__header {
+  list-style: none;
+  text-decoration: none;
+  padding: 4px 0;
+  margin-right: 35px;
+  cursor: pointer;
+
+
+}
+.navigation__header:last-child{
+  margin-right: 0;
+}
+
