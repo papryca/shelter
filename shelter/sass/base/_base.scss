@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html {
   font-size: 10px;
 }
@@ -9,25 +12,20 @@ body {
 
 a,p{
   font-family: 'Arial', sans-serif;
-  font-weight: 400;
+  @include font($size:1.5rem,$height:1.7rem)
 }
 h2{
   font-family: 'Georgia', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 57px;
+  @include font($size:4.4rem,$height:5.7rem)
 }
 h3{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 45px;
-  letter-spacing: 0.06em;
+
+  @include font($size:3.5rem,$height:4.5rem)
 }
 h4{
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+
+  @include font($size:2rem,$height:2.3rem)
+}
+.button {
+@include font($size:1.7rem,$height:2.21rem)
 }

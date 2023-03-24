@@ -1,9 +1,14 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "abstract/mixin";
+
 @import "abstract/constants";
 @import "base/base";
 @import "layout/wrapper";
 //Components
 @import "components/donation";
 @import "components/collection";
+@import "components/promo";
+
 //Layouts
 @import "layout/header";
 @import "base/buttons";

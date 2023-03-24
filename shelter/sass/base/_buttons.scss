@@ -2,24 +2,24 @@
   padding: 15px 45px;
   cursor: pointer;
   color: $color-button;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 2.2rem;
   letter-spacing: 0.06em;
   border-radius: 100px;
   transition: all 0.3s;
-}
-.button_bordered {
-  border: 2px solid #F1CDB3;
+  @include font($size:1.7rem,$height:2.2rem);
+  &_colored{
+    background:$color-button-normal;
+    border: 2px solid $color-primary;
+  }
+  &_bordered {
+    border: 2px solid #F1CDB3;
+  }
+  &:hover{
+    background:$color-button-hover;
+    border: 2px solid $color-button-hover;
+  }
+
 }
 
 
-.button_colored{
-  background:$color-button-normal;
-  border: 2px solid $color-primary;
-}
-.button:hover{
-  background:$color-button-hover;
-  border: 2px solid $color-button-hover;
-}
+
+
