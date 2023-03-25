@@ -2,13 +2,19 @@
 @import "abstract/mixin";
 
 @import "abstract/constants";
-@import "base/base";
+
 @import "layout/wrapper";
 //Components
 @import "components/donation";
 @import "components/collection";
 @import "components/promo";
+@import "components/description";
+@import "components/hepl";
 
 //Layouts
 @import "layout/header";
+
+//Base
 @import "base/buttons";
+@import "base/button-slider";
+@import "base/base";

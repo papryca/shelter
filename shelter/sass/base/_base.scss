@@ -9,8 +9,7 @@ body {
   font-size: 1.6rem;
   font-family: 'Georgia', sans-serif;
 }
-
-a,p{
+p{
   font-family: 'Arial', sans-serif;
   @include font($size:1.5rem,$height:1.7rem)
 }
@@ -19,12 +18,18 @@ h2{
   @include font($size:4.4rem,$height:5.7rem)
 }
 h3{
-
+  color: $color-header;
   @include font($size:3.5rem,$height:4.5rem)
 }
 h4{
 
   @include font($size:2rem,$height:2.3rem)
+}
+h5{
+  color: $color-header;
+  font-family: 'Georgia', sans-serif;
+  @include font($size:1.5rem,$height:1.7rem)
+
 }
 .button {
 @include font($size:1.7rem,$height:2.21rem)

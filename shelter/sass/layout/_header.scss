@@ -8,7 +8,8 @@
     justify-content: space-between;
   }
 }
-.logo_subtitle{
+
+.logo_subtitle {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -28,25 +29,29 @@
     padding: 4px 0;
     transition: all 0.3s;
     margin-right: 35px;
+    font-family: 'Arial', sans-serif;
+    @include font($size:1.5rem,$height:2.4rem);
 
 
-    &:hover{
-    color:$color-link-active-hover ;
-    cursor: pointer;
-  }
-    &:active{
+    &:hover {
+      color: $color-link-active-hover;
+      cursor: pointer;
+    }
+
+    &:active {
       border-bottom: 3px $color-primary solid;
-      color:$color-link-active-hover ;
+      color: $color-link-active-hover;
     }
 
   }
 
-  &__header_line a{
+  &__header_line a {
     border-bottom: 3px $color-primary solid;
     padding: 4px 0;
-    color:$color-link-active-hover ;
+    color: $color-link-active-hover;
   }
-  &__header_last a{
+
+  &__header_last a {
     &:last-child {
       margin-right: 0;
     }

@@ -1,3 +1,73 @@
-.donation{
+.donation {
   background-color: $color-background-grey;
+
+  &__content {
+    margin: 80px 182px 100px 183px;
+    display: flex;
+  }
+
+  &__button {
+    border-radius: 9px;
+    display: flex;
+    @include font($size:1.5rem,$height:1.7rem);
+    gap: 15px;
+    width: 349px;
+    height: 43px;
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-style: italic;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .icon-card__link {
+      color: $color-button;
+      cursor: pointer;
+    }
+
+    &:active .icon-card__link {
+      border-bottom: 3px $color-header solid;
+    }
+  }
+
+
+}
+
+.icon-card__link {
+
+  color: $color-header;
+  margin: 0;
+  @include font($size:2.0rem,$height:2.3rem);
+  letter-spacing: 0.06em;
+
+
+}
+
+.icon-card {
+  width: 30px;
+  height: 23px;
+}
+
+.donation__info h3 {
+  margin: 0;
+}
+
+.donation__info h5 {
+  margin: 20px 0;
+}
+
+.donation__italic {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  height: 1.8rem;
+  color: #B2B2B2;
+  width: 380px
+}
+
+.donation__image {
+  margin: 11px 30px 10px 0;
 }
