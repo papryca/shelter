@@ -24,13 +24,14 @@
                         <a href="#">About the shelter</a>
                     </li>
                     <li class="navigation__header">
-                        <a href="#">Our pets</a>
+                        <a href="http://localhost:63342/shelter/shelter/pets.html?_ijt=40q0mtd3l48c9opshc0hpmd5nk&_ij_reload=RELOAD_ON_SAVE">Our
+                            pets</a>
                     </li>
                     <li class="navigation__header">
-                        <a href="#">Help the shelter</a>
+                        <a href="#help">Help the shelter</a>
                     </li>
                     <li class="navigation__header navigation__header_last">
-                        <a href="#">Contacts</a>
+                        <a href="#footer">Contacts</a>
                     </li>
                 </ul>
 
@@ -48,7 +49,7 @@
                         will
                         love you more than anybody else in the world, you will see! </p>
                     <div class="promo-content__button">
-                        <button class="button button_colored">Make a friend</button>
+                        <a class="button button_colored" href="#collection">Make a friend</a>
                     </div>
                 </div>
                 <div class="promo-content__picture">
@@ -86,7 +87,7 @@
 
     </div>
 </section>
-<section class="collection">
+<section class="collection" id="collection">
     <div class="wrapper ">
         <div class="collections">
             <div class="collections__name">
@@ -135,7 +136,9 @@
                 </button>
             </div>
             <div class="collections-button">
-                <button class="button button_colored">Get to know the rest</button>
+                <a class="button button_colored"
+                   href="http://localhost:63342/shelter/shelter/pets.html?_ijt=40q0mtd3l48c9opshc0hpmd5nk&_ij_reload=RELOAD_ON_SAVE">Get
+                    to know the rest</a>
             </div>
 
         </div>
@@ -144,7 +147,7 @@
     </div>
 </section>
 
-<section class="help">
+<section class="help" id="help">
     <div class="wrapper">
         <div class="help-content">
             <h3 class="help-content__head">How you can help<br>
@@ -263,7 +266,7 @@
                 <span class="icon-card">
                     <img src="images/donation/credit-card.png" alt="credit-card"/>
                 </span>
-                    <span class="icon-card__link" >8380 2880 8028 8791 7435</span>
+                    <span class="icon-card__link">8380 2880 8028 8791 7435</span>
 
                 </a>
 
@@ -281,20 +284,20 @@
     </div>
 
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="wrapper">
-        <div class="layout-3-column">
+        <div class="footer__content">
             <div class="footer-contacts">
-                <h3>For questions and suggestions</h3>
-                <div class="footer-contacts__connection">
-                    <span class="icon-envelope">
+                <h3 class="footer-contacts__header">For questions<br> and suggestions</h3>
+                <div class="footer-contacts__connection footer_flex">
+                    <a class="icon-envelope" href="mailto:email@shelter.com">
                         <img src="images/address/icon-email.png" alt="address">
-                    </span>
-                    <div class="email-address">
+                    </a>
+                    <a class="email-address" href="mailto:email@shelter.com">
                         <h4>email@shelter.com</h4>
-                    </div>
+                    </a>
                 </div>
-                <div class="footer-contacts__connection">
+                <div class="footer-contacts__connection footer_flex">
                     <span class="icon-telephone">
                         <img src="images/address/icon-phone.png" alt="telephone">
                     </span>
@@ -305,15 +308,15 @@
 
             </div>
             <div class="footer-address">
-                <h3>We are waiting for your visit</h3>
-                <div class="footer-address__information">
+                <h3 class="footer-address__header">We are waiting<br> for your visit</h3>
+                <div class="footer-address__information footer_flex">
                     <span>
                           <img src="images/address/icon-marker.png" alt="address"/>
                     </span>
                     <h4>1 Central Street, Boston (entrance from the store)</h4>
 
                 </div>
-                <div class="footer-address__information">
+                <div class="footer-address__information footer_flex">
                     <span>
                           <img src="images/address/icon-marker.png" alt="address"/>
                     </span>

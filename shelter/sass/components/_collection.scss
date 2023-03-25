@@ -1,7 +1,5 @@
 .collection {
   background-color: $color-background-grey;
-
-
 }
 
 .layout-3-column {
@@ -46,32 +44,37 @@
 }
 
 .collection-card__photo {
-  width: 270px;
+  max-width: 270px;
   height: 270px;
 }
-.collection-card p{
+
+.collection-card p {
   align-items: center;
-  @include font($size:2rem,$height:2.3rem);
+  @include font($size: 2rem, $height: 2.3rem);
   text-align: center;
   color: $color-header;
   margin: 30px 0;
 }
+
 .collection__button {
   display: flex;
   margin-bottom: 30px;
   justify-content: center;
 
 }
-.collection-card{
+
+.collection-card {
   background-color: #FAFAFA;
   transition: all 0.3s;
-  &:hover{
+
+  &:hover {
     box-shadow: 0 0 8px 3px $color-button-hover;
     transition: all 0.3s;
   }
 
 }
-.right, .left{
+
+.right, .left {
   display: block;
 }
 

@@ -10,6 +10,7 @@
   &_colored{
     background:$color-button-normal;
     border: 2px solid $color-primary;
+    text-decoration: none;
   }
   &_bordered {
     border: 2px solid #F1CDB3;
@@ -18,6 +19,9 @@
     cursor: pointer;
     background:$color-button-hover;
     border: 2px solid $color-button-hover;
+  }
+  &:active{
+    box-shadow: 0 0 8px 3px $color-button;
   }
 
 
