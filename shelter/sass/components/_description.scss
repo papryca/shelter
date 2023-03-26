@@ -33,3 +33,21 @@
 .text-second{
   margin: 0;
 }
+.description{
+  @include media-tablet{
+    &__content{
+      flex-direction: column-reverse;
+      margin: 80px 166px 100px 165px ;
+    }
+    @include media-tablet{
+    &__text {
+      margin: 0;
+    }
+    }@include media-tablet{
+    &__photo {
+      margin: 80px 68px 0 69px;
+    }
+    }
+
+  }
+}

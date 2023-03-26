@@ -23,3 +23,15 @@
   color: $color-header;
   font-family: 'Georgia', sans-serif;
 }
+.help-layout{
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.help-content{
+  @include media-tablet {
+    margin: 80px 69px 100px 69px;
+  }
+}
+

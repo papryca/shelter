@@ -70,12 +70,39 @@
   &:hover {
     box-shadow: 0 0 8px 3px $color-button-hover;
     transition: all 0.3s;
+    cursor: pointer;
+
+    .button {
+      cursor: pointer;
+      background: $color-button-hover;
+      border: 2px solid $color-button-hover;
+    }
   }
+
 
 }
 
 .right, .left {
   display: block;
+}
+
+.collections {
+  @include media-tablet {
+    margin: 80px 30px 100px 30px;
+  }
+
+}
+
+.last-card {
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.layout-3-column{
+  @include media-tablet {
+    margin: 0 64px;
+  }
 }
 
 

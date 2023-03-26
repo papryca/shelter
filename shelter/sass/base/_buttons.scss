@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 45px;
+  padding: 13px 45px;
   color: $color-button;
   background-color: $color-background-white;
   letter-spacing: 0.06em;
@@ -11,7 +11,9 @@
     background:$color-button-normal;
     border: 2px solid $color-primary;
     text-decoration: none;
+
   }
+
   &_bordered {
     border: 2px solid #F1CDB3;
   }

@@ -11,6 +11,7 @@
   color: $color-button-normal;
   &__connection:last-child{
     margin: 40px 0 60px 0;
+
   }
 
 }
@@ -37,8 +38,18 @@
   gap: 20px;
 
 }
-.footer_flex img ,h4{
+.footer_flex img ,a{
   margin: 0;
+  text-decoration: none;
+  @include font($size:2rem,$height:2.3rem);
+  color: $color-button-normal;
+  font-family: 'Georgia', sans-serif;
+  transition: all 0.3s;
+  //&:hover {
+  //  color: #F6F6F6;
+  //  cursor: pointer;
+  //
+  //}
 }
 .icon-envelope img{
   display: block;
@@ -47,5 +58,39 @@
   width: 300px;
   height: 310px;
 }
+.email, .address{
+  margin: 0;
+  transition: all 0.3s;
+  &:hover{
+    color: #F6F6F6;
+    cursor: pointer;
 
+  }
+  &:active{
+    border-bottom: 2px solid #F6F6F6;
+  }
+ }
+@include media-tablet {
+  .footer__content {
+    margin: 30px 30px 0 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap:60px
+  }
+  .footer-contacts__header{
+    margin: 0 0 40px 0;
+  }
+  .footer-address__header{
+    color: $color-header-main;
+    margin: 0 0 33px 0;
+  }
+  .footer-contacts__connection:last-child{
+    margin-bottom: 0;
+
+  }
+  .footer-address__information:last-child{
+    margin-bottom: 0;
+  }
+}
 

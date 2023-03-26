@@ -9,7 +9,7 @@
   &__button {
     border-radius: 9px;
     display: flex;
-    @include font($size:1.5rem,$height:1.7rem);
+    @include font($size: 1.5rem, $height: 1.7rem);
     gap: 15px;
     width: 349px;
     height: 43px;
@@ -18,6 +18,7 @@
     align-items: center;
     text-decoration: none;
     font-style: italic;
+
     &:hover {
       cursor: pointer;
     }
@@ -28,7 +29,8 @@
     }
 
     &:active .icon-card__link {
-      border-bottom: 3px $color-header solid;
+      border-bottom: 2px $color-header solid;
+      padding-bottom: 0;
     }
   }
 
@@ -39,9 +41,9 @@
 
   color: $color-header;
   margin: 0;
-  @include font($size:2.0rem,$height:2.3rem);
+  @include font($size: 2.0rem, $height: 2.3rem);
   letter-spacing: 0.06em;
-
+  padding-bottom: 2px;
 
 }
 
@@ -63,11 +65,24 @@
   font-weight: 400;
   margin-top: 20px;
   font-size: 1.2rem;
-  height: 1.8rem;
   color: #B2B2B2;
   max-width: 380px
 }
 
 .donation__image {
   margin: 11px 30px 10px 0;
+}
+
+@include media-tablet {
+  .donation__content {
+    flex-direction: column-reverse;
+    margin: 80px 132px 100px 131px;
+  }
+.donation__info{
+  margin: 0 62.5px 60px 62.5px;
+
+}
+  .donation__image{
+    margin: 0;
+  }
 }
