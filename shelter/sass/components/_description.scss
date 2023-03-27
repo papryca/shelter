@@ -1,0 +1,53 @@
+.description{
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 40px 100px 40px ;
+  }
+  &__photo{
+    width: 300px;
+    height: 408px;
+    margin: 0 0 0 175px;
+  }
+  &__text{
+    max-width:430px;
+    margin: 14px 175px 14px 120px;
+
+  }
+  &__text h3{
+    color: $color-header;
+  }
+  &__text p{
+    color: #4C4C4C;
+    @include font($size:1.5rem,$height:2.4rem)
+  }
+  &__name{
+    margin: 0;
+  }
+
+}
+.text-first{
+  margin: 25px 0;
+}
+.text-second{
+  margin: 0;
+}
+.description{
+  @include media-tablet{
+    &__content{
+      flex-direction: column-reverse;
+      margin: 80px 166px 100px 165px ;
+    }
+    @include media-tablet{
+    &__text {
+      margin: 0;
+    }
+    }@include media-tablet{
+    &__photo {
+      margin: 80px 68px 0 69px;
+    }
+    }
+
+  }
+}

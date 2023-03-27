@@ -1,0 +1,128 @@
+.collection {
+  background-color: $color-background-grey;
+}
+
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 105px;
+
+}
+
+.collections {
+  margin: 80px 40px 100px 40px;
+
+  position: relative;
+  max-width: 1200px;
+
+  &__name {
+    text-align: center;
+    color: $color-header;
+    margin-bottom: 60px;
+  }
+}
+.collections__name_pets{
+  margin-bottom: 45px;
+}
+
+.arrow_left {
+  position: absolute;
+  left: 0;
+  top: 342px;
+
+
+}
+
+.arrow_right {
+  position: absolute;
+  right: 0;
+  top: 342px;
+}
+
+.collections-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+}
+.collection-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-top: 45px;
+}
+
+.collection-card__photo {
+  max-width: 270px;
+  height: 270px;
+}
+
+.collection-card p {
+  align-items: center;
+  @include font($size: 2rem, $height: 2.3rem);
+  text-align: center;
+  color: $color-header;
+  margin: 30px 0;
+  letter-spacing: 0.06em;
+  font-family: 'Georgia', sans-serif;
+}
+
+.collection__button {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+
+}
+
+.collection-card {
+  background-color: #FAFAFA;
+  transition: all 0.3s;
+
+  &:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+
+    .button {
+      cursor: pointer;
+      background: $color-button-hover;
+      border: 2px solid $color-button-hover;
+    }
+  }
+
+}
+.layout-4-column{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  row-gap: 30px;
+
+}
+.right, .left {
+  display: block;
+}
+
+.collections {
+  @include media-tablet {
+    margin: 80px 30px 100px 30px;
+  }
+
+}
+
+.last-card {
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.layout-3-column{
+  @include media-tablet {
+    margin: 0 64px;
+  }
+}
+
+
+
+
+

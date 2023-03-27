@@ -1,0 +1,97 @@
+
+.header {
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+}
+.header__wrapper_light{
+  padding: 30px 40px 30px 40px;
+  margin: 0;
+}
+.logo_subtitle {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: $color-header-main;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+
+
+  &__header a {
+    text-decoration: none;
+    color: $color-link-normal;
+    padding: 4px 0;
+    transition: all 0.3s;
+    margin-right: 35px;
+    font-family: 'Arial', sans-serif;
+    @include font($size:1.5rem,$height:2.4rem);
+
+
+    &:hover {
+      color: $color-link-active-hover;
+      cursor: pointer;
+    }
+
+    &:active {
+      border-bottom: 3px $color-primary solid;
+      color: $color-link-active-hover;
+    }
+
+  }
+
+  &__header_line a {
+    border-bottom: 3px $color-primary solid;
+    padding: 4px 0;
+    color: $color-link-active-hover;
+  }
+
+  &__header_last a {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+ .navigation__header_pets a{
+  color: $color-header;
+   transition: all 0.3s;
+   &:hover {
+     color: $color-button;
+     cursor: pointer;
+   }
+}
+.logo_title {
+  margin: 0;
+  letter-spacing: 0.06em;
+
+  a {
+    font-family: 'Georgia', sans-serif;
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+  }
+}
+.logo_title_black{
+  color: $color-header;
+  font-family: 'Georgia', sans-serif;
+  @include font($size:3.2rem,$height:3.5rem);
+  letter-spacing: 0.06em;
+}
+.logo_subtitle_black{
+  color: $color-button;
+  letter-spacing: 0.1em;
+}
+
+
