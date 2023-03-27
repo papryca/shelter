@@ -1,14 +1,18 @@
 
 .header {
 
-
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-}
 
+  }
+
+}
+.header__wrapper_light{
+  padding: 30px 40px 30px 40px;
+  margin: 0;
+}
 .logo_subtitle {
   font-weight: 400;
   font-size: 1.3rem;
@@ -16,6 +20,7 @@
   color: $color-header-main;
   margin: 0;
   text-align: center;
+  letter-spacing: 0.1em;
 }
 
 .navigation {
@@ -57,9 +62,17 @@
     }
   }
 }
-
+ .navigation__header_pets a{
+  color: $color-header;
+   transition: all 0.3s;
+   &:hover {
+     color: $color-button;
+     cursor: pointer;
+   }
+}
 .logo_title {
   margin: 0;
+  letter-spacing: 0.06em;
 
   a {
     font-family: 'Georgia', sans-serif;
@@ -69,6 +82,16 @@
     font-size: 3.2rem;
     line-height: 3.5rem;
   }
+}
+.logo_title_black{
+  color: $color-header;
+  font-family: 'Georgia', sans-serif;
+  @include font($size:3.2rem,$height:3.5rem);
+  letter-spacing: 0.06em;
+}
+.logo_subtitle_black{
+  color: $color-button;
+  letter-spacing: 0.1em;
 }
 
 

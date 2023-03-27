@@ -20,7 +20,7 @@ h2{
 }
 h3{
   color: $color-header;
-  @include font($size:3.5rem,$height:4.5rem)
+  @include font($size:3.5rem,$height:4.5rem);
 }
 h4{
 

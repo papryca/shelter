@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 105px;
+
 }
 
 .collections {
@@ -18,8 +19,11 @@
   &__name {
     text-align: center;
     color: $color-header;
-    margin: 0 0 60px 0;
+    margin-bottom: 60px;
   }
+}
+.collections__name_pets{
+  margin-bottom: 45px;
 }
 
 .arrow_left {
@@ -42,6 +46,13 @@
   margin-top: 60px;
 
 }
+.collection-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-top: 45px;
+}
 
 .collection-card__photo {
   max-width: 270px;
@@ -54,6 +65,8 @@
   text-align: center;
   color: $color-header;
   margin: 30px 0;
+  letter-spacing: 0.06em;
+  font-family: 'Georgia', sans-serif;
 }
 
 .collection__button {
@@ -68,7 +81,6 @@
   transition: all 0.3s;
 
   &:hover {
-    box-shadow: 0 0 8px 3px $color-button-hover;
     transition: all 0.3s;
     cursor: pointer;
 
@@ -79,9 +91,14 @@
     }
   }
 
+}
+.layout-4-column{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  row-gap: 30px;
 
 }
-
 .right, .left {
   display: block;
 }
