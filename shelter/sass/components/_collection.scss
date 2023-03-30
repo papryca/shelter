@@ -11,7 +11,7 @@
 }
 
 .collections {
-  margin: 80px 40px 100px 40px;
+  margin: 80px 0 100px 0;
 
   position: relative;
   max-width: 1200px;
@@ -23,7 +23,7 @@
   }
 }
 .collections__name_pets{
-  margin-bottom: 45px;
+  margin:82px 0 61px 0;
 }
 
 .arrow_left {
@@ -51,7 +51,7 @@
   justify-content: center;
   gap: 20px;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 59px;
 }
 
 .collection-card__photo {
@@ -79,17 +79,24 @@
 .collection-card {
   background-color: #FAFAFA;
   transition: all 0.3s;
-
+ color: rebeccapurple;
   &:hover {
     transition: all 0.3s;
     cursor: pointer;
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background-color: #FFFFFF;
 
     .button {
       cursor: pointer;
       background: $color-button-hover;
       border: 2px solid $color-button-hover;
     }
+    .change-card{
+      background-color: rebeccapurple;
+    }
   }
+
+
 
 }
 .layout-4-column{

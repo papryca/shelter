@@ -1,5 +1,5 @@
 .button {
-  padding: 13px 45px;
+  padding: 13px 44px;
   color: $color-button;
   background-color: $color-background-white;
   letter-spacing: 0.06em;
@@ -23,6 +23,7 @@
     border: 2px solid $color-text;
     color: $color-text;
     background-color: $color-background-grey;
+
   }
 
   &:hover {
@@ -31,19 +32,23 @@
     border: 2px solid $color-button-hover;
   }
 
+  &_bordered-inactive:hover {
+    cursor: default;
+  }
+
   &:active {
     box-shadow: 0 0 8px 3px $color-button;
   }
 
 
-
 }
+
 .arrow_less:hover, .arrow_less-less:hover {
-  cursor: pointer;
   border: 2px solid $color-text;
   background-color: $color-background-grey;
   color: $color-text;
 }
+
 .arrow_left {
   padding: 13px 15px;
 }
@@ -57,8 +62,9 @@
   background-color: $color-button-normal;
   color: $color-button;
 }
-.arrow_number:hover{
 
+.arrow_number:hover {
+  cursor: default;
   background-color: $color-button-normal;
   color: $color-button;
   border: 2px solid $color-button-normal;

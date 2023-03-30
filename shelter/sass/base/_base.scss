@@ -14,24 +14,33 @@ p{
   font-family: 'Arial', sans-serif;
   @include font($size:1.5rem,$height:1.7rem)
 }
+h1{
+  color: $color-header;
+  @include font($size:3.5rem,$height:4.5rem);
+  letter-spacing: 0.06em;
+}
 h2{
   font-family: 'Georgia', sans-serif;
-  @include font($size:4.4rem,$height:5.7rem)
+  @include font($size:4.4rem,$height:5.7rem);
+
 }
 h3{
   color: $color-header;
   @include font($size:3.5rem,$height:4.5rem);
+  letter-spacing: 0.06em;
 }
 h4{
-
-  @include font($size:2rem,$height:2.3rem)
+  @include font($size:2rem,$height:2.3rem);
+  letter-spacing: 0.06em;
 }
 h5{
   color: $color-header;
   font-family: 'Georgia', sans-serif;
-  @include font($size:1.5rem,$height:1.7rem)
+  @include font($size:1.5rem,$height:1.7rem);
+  letter-spacing: 0.06em;
 
 }
 .button {
-@include font($size:1.7rem,$height:2.21rem)
+@include font($size:1.7rem,$height:2.21rem);
+  letter-spacing: 0.06em;
 }

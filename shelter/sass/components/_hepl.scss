@@ -1,5 +1,5 @@
 .help-content{
- margin: 80px 40px 100px 40px;
+ margin: 80px 0 100px 0;
   &__head{
     text-align: center;
     margin-bottom: 60px;
@@ -10,7 +10,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 87px;
+  margin: 0 80px;
   gap: 120px;
   row-gap: 55px;
 
@@ -22,6 +22,8 @@
   @include font($size:2rem,$height:2.3rem);
   color: $color-header;
   font-family: 'Georgia', sans-serif;
+  letter-spacing: 0.06em;
+  margin: 23px 0 4px 0;
 }
 .help-layout{
   @include media-tablet {

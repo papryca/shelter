@@ -311,7 +311,7 @@ template {
   background-color: #F6F6F6;
 }
 .donation__content {
-  margin: 80px 182px 100px 183px;
+  margin: 78px 142px 90px 143px;
   display: flex;
 }
 .donation__button {
@@ -403,7 +403,7 @@ template {
 }
 
 .collections {
-  margin: 80px 40px 100px 40px;
+  margin: 80px 0 100px 0;
   position: relative;
   max-width: 1200px;
 }
@@ -414,7 +414,7 @@ template {
 }
 
 .collections__name_pets {
-  margin-bottom: 45px;
+  margin: 82px 0 61px 0;
 }
 
 .arrow_left {
@@ -440,7 +440,7 @@ template {
   justify-content: center;
   gap: 20px;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 59px;
 }
 
 .collection-card__photo {
@@ -470,15 +470,21 @@ template {
 .collection-card {
   background-color: #FAFAFA;
   transition: all 0.3s;
+  color: rebeccapurple;
 }
 .collection-card:hover {
   transition: all 0.3s;
   cursor: pointer;
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background-color: #FFFFFF;
 }
 .collection-card:hover .button {
   cursor: pointer;
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
+}
+.collection-card:hover .change-card {
+  background-color: rebeccapurple;
 }
 
 .layout-4-column {
@@ -512,7 +518,7 @@ template {
 
 .header-promo {
   background: url(../images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
-  padding: 30px 40px 0 40px;
+  padding-top: 30px;
 }
 
 .promo-content {
@@ -552,7 +558,7 @@ template {
   margin: 0;
 }
 .promo-content__button {
-  margin-top: 52px;
+  margin-top: 43px;
 }
 
 @media (max-width: 768px) {
@@ -599,7 +605,7 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 80px 40px 100px 40px;
+  margin: 80px 0 100px 0;
 }
 .description__photo {
   width: 300px;
@@ -650,7 +656,7 @@ template {
 }
 
 .help-content {
-  margin: 80px 40px 100px 40px;
+  margin: 80px 0 100px 0;
 }
 .help-content__head {
   text-align: center;
@@ -661,7 +667,7 @@ template {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 87px;
+  margin: 0 80px;
   gap: 120px;
   row-gap: 55px;
   text-align: center;
@@ -674,6 +680,8 @@ template {
   line-height: 2.3rem;
   color: #545454;
   font-family: "Georgia", sans-serif;
+  letter-spacing: 0.06em;
+  margin: 23px 0 4px 0;
 }
 
 @media (max-width: 768px) {
@@ -692,7 +700,7 @@ template {
 .footer__content {
   display: flex;
   justify-content: space-between;
-  margin: 40px 40px 0 40px;
+  margin-top: 40px;
 }
 
 .footer {
@@ -700,11 +708,11 @@ template {
 }
 
 .footer-contacts {
-  max-width: 278px;
+  max-width: 279px;
   color: #F1CDB3;
 }
 .footer-contacts__connection:last-child {
-  margin: 40px 0 60px 0;
+  margin: 38px 0 60px 0;
 }
 
 .footer-address {
@@ -722,7 +730,7 @@ template {
 
 .footer-address__header {
   color: #FFFFFF;
-  margin: 16px 0 34px 0;
+  margin: 16px 0 32px 0;
 }
 
 .footer_flex {
@@ -793,8 +801,7 @@ template {
 }
 
 .header__wrapper_light {
-  padding: 30px 40px 30px 40px;
-  margin: 0;
+  padding: 25px 0 29px 0;
 }
 
 .logo_subtitle {
@@ -810,13 +817,14 @@ template {
 .navigation {
   display: flex;
   list-style: none;
+  margin-top: 15px;
 }
 .navigation__header a {
   text-decoration: none;
   color: #CDCDCD;
-  padding: 4px 0;
+  padding-bottom: 4px;
   transition: all 0.3s;
-  margin-right: 35px;
+  margin-right: 36px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -833,8 +841,12 @@ template {
 }
 .navigation__header_line a {
   border-bottom: 3px #F1CDB3 solid;
-  padding: 4px 0;
+  padding-top: 0;
+  padding-bottom: 3px;
   color: #FAFAFA;
+}
+.navigation__header_line a:hover {
+  cursor: default;
 }
 .navigation__header_last a:last-child {
   margin-right: 0;
@@ -849,6 +861,11 @@ template {
   cursor: pointer;
 }
 
+.navigation__header_pets:nth-child(2) a:hover {
+  cursor: default;
+  color: #545454;
+}
+
 .logo_title {
   margin: 0;
   letter-spacing: 0.06em;
@@ -860,6 +877,7 @@ template {
   font-weight: 400;
   font-size: 3.2rem;
   line-height: 3.5rem;
+  vertical-align: top;
 }
 
 .logo_title_black {
@@ -877,14 +895,20 @@ template {
   letter-spacing: 0.1em;
 }
 
+.header__logo-black {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
 .wrapper {
   max-width: 1280px;
   margin: auto;
   overflow: hidden;
+  padding: 0 40px;
 }
 
 .button {
-  padding: 13px 45px;
+  padding: 13px 44px;
   color: #292929;
   background-color: #FFFFFF;
   letter-spacing: 0.06em;
@@ -914,12 +938,14 @@ template {
   background: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
+.button_bordered-inactive:hover {
+  cursor: default;
+}
 .button:active {
   box-shadow: 0 0 8px 3px #292929;
 }
 
 .arrow_less:hover, .arrow_less-less:hover {
-  cursor: pointer;
   border: 2px solid #CDCDCD;
   background-color: #F6F6F6;
   color: #CDCDCD;
@@ -940,6 +966,7 @@ template {
 }
 
 .arrow_number:hover {
+  cursor: default;
   background-color: #F1CDB3;
   color: #292929;
   border: 2px solid #F1CDB3;
@@ -975,6 +1002,15 @@ p {
   line-height: 1.7rem;
 }
 
+h1 {
+  color: #545454;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.06em;
+}
+
 h2 {
   font-family: "Georgia", sans-serif;
   font-style: normal;
@@ -989,6 +1025,7 @@ h3 {
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 4.5rem;
+  letter-spacing: 0.06em;
 }
 
 h4 {
@@ -996,6 +1033,7 @@ h4 {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.3rem;
+  letter-spacing: 0.06em;
 }
 
 h5 {
@@ -1005,6 +1043,7 @@ h5 {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.7rem;
+  letter-spacing: 0.06em;
 }
 
 .button {
@@ -1012,6 +1051,7 @@ h5 {
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 2.21rem;
+  letter-spacing: 0.06em;
 }
 
 /*# sourceMappingURL=shelter.css.map */
