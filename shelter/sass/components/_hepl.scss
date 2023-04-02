@@ -10,7 +10,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 80px;
+  margin: 0 auto;
   gap: 120px;
   row-gap: 55px;
 
@@ -25,15 +25,21 @@
   letter-spacing: 0.06em;
   margin: 23px 0 4px 0;
 }
-.help-layout{
-  @include media-tablet {
+@include media-tablet{
+  .help-layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 0;
+    row-gap: 54px;
+  }
+  .help-content{
+      margin: 80px 39px 100px 39px;
+    &__head{
+      margin-bottom: 61px;
+    }
   }
 }
-.help-content{
-  @include media-tablet {
-    margin: 80px 69px 100px 69px;
-  }
-}
+
+
 

@@ -1,53 +1,97 @@
-.description{
-  &__content{
+.description {
+  &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 80px 0 100px 0 ;
+    margin: 80px 0 100px 0;
   }
-  &__photo{
+
+  &__photo {
     width: 300px;
     height: 408px;
     margin: 0 0 0 175px;
   }
-  &__text{
-    max-width:430px;
+
+  &__text {
+    max-width: 430px;
     margin: 14px 175px 14px 120px;
 
   }
-  &__text h3{
+
+  &__text h3 {
     color: $color-header;
   }
-  &__text p{
+
+  &__text p {
     color: #4C4C4C;
-    @include font($size:1.5rem,$height:2.4rem)
+    @include font($size: 1.5rem, $height: 2.4rem)
   }
-  &__name{
+
+  &__name {
     margin: 0;
   }
 
 }
-.text-first{
+
+.text-first {
   margin: 25px 0;
 }
-.text-second{
+
+.text-second {
   margin: 0;
 }
-.description{
-  @include media-tablet{
-    &__content{
+
+@include media-tablet {
+  .description {
+    &__content {
       flex-direction: column-reverse;
-      margin: 80px 166px 100px 165px ;
+      margin: 80px auto 100px auto;
+
     }
-    @include media-tablet{
+
     &__text {
+      max-width: none;
+      width: 61%;
       margin: 0;
     }
-    }@include media-tablet{
+
     &__photo {
       margin: 80px 68px 0 69px;
     }
-    }
-
   }
 }
+
+@include media-mobile{
+  .description__text{
+    width: 100%;
+  }
+  .description__name{
+    @include font($size: 2.5rem, $height: 3.2rem);
+    text-align: center;
+  }
+  .description__content{
+    margin: 42px 0;
+
+  }
+  .description__photo{
+    width: 260px;
+    height: 353.6px;
+   margin: 41px 0 0 0;
+    align-items: center;
+  }
+  .description__photo img{
+    width: 260px;
+    height: 353.6px;
+  }
+  .description .wrapper{
+    padding: 0 25px;
+  }
+  .text-first{
+    text-align: justify;
+    margin-bottom: 22px;
+  }
+  .text-second{
+    text-align: justify;
+  }
+}
+

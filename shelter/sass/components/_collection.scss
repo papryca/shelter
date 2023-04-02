@@ -22,8 +22,9 @@
     margin-bottom: 60px;
   }
 }
-.collections__name_pets{
-  margin:82px 0 61px 0;
+
+.collections__name_pets {
+  margin: 82px 0 61px 0;
 }
 
 .arrow_left {
@@ -46,7 +47,8 @@
   margin-top: 60px;
 
 }
-.collection-buttons{
+
+.collection-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -79,7 +81,8 @@
 .collection-card {
   background-color: #FAFAFA;
   transition: all 0.3s;
- color: rebeccapurple;
+  color: rebeccapurple;
+
   &:hover {
     transition: all 0.3s;
     cursor: pointer;
@@ -91,43 +94,67 @@
       background: $color-button-hover;
       border: 2px solid $color-button-hover;
     }
-    .change-card{
+
+    .change-card {
       background-color: rebeccapurple;
     }
   }
 
 
-
 }
-.layout-4-column{
+
+.layout-4-column {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   row-gap: 30px;
 
 }
+
 .right, .left {
   display: block;
 }
 
-.collections {
-  @include media-tablet {
-    margin: 80px 30px 100px 30px;
+@include media-tablet {
+  .collections {
+    margin: 80px auto 100px auto;
+    min-width: 708px;
   }
 
-}
-
-.last-card {
-  @include media-tablet {
+  .last-card {
     display: none;
   }
+
+  .layout-3-column {
+    justify-content: space-around;
+    gap: 40px;
+    margin: 0 150px;
+  }
+
+
 }
 
-.layout-3-column{
-  @include media-tablet {
-    margin: 0 64px;
+@include media-mobile {
+  .collections__name h3 {
+    @include font($size: 2.5rem, $height: 3.2rem);
+    text-align: center;
+  }
+  .collections {
+    margin: 42px 0 42px 0;
+    min-width: 100%;
+  }
+  .second-card {
+    display: none;
+  }
+  .collection-card {
+    width: 100%;
   }
 }
+
+
+
+
+
 
 
 
