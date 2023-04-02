@@ -32,7 +32,6 @@
   left: 0;
   top: 342px;
 
-
 }
 
 .arrow_right {
@@ -139,6 +138,9 @@
     @include font($size: 2.5rem, $height: 3.2rem);
     text-align: center;
   }
+  .collections__name{
+    margin-bottom: 42px;
+  }
   .collections {
     margin: 42px 0 42px 0;
     min-width: 100%;
@@ -146,8 +148,22 @@
   .second-card {
     display: none;
   }
-  .collection-card {
-    width: 100%;
+  .collection .wrapper{
+    padding: 0 10px;
+  }
+  .arrow_left {
+    position: absolute;
+    left: 59px;
+    top: 561px;
+
+  }
+  .arrow_right {
+    position: absolute;
+    right: 59px;
+    top: 561px;
+  }
+  .collections-button{
+    margin-top: 114px;
   }
 }
 

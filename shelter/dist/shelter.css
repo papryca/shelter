@@ -311,7 +311,7 @@ template {
   background-color: #F6F6F6;
 }
 .donation__content {
-  margin: 78px 142px 88px 143px;
+  margin: 80px 142px 88px 143px;
   display: flex;
 }
 .donation__button {
@@ -364,6 +364,7 @@ template {
 
 .donation__info h5 {
   margin: 20px 0;
+  letter-spacing: 0.06em;
 }
 
 .donation__italic {
@@ -387,6 +388,7 @@ template {
   .donation__content {
     flex-direction: column-reverse;
     margin: 80px 101px 98px 102px;
+    padding: 0 20px;
   }
   .donation__info {
     margin: 0 62.5px 46px 62.5px;
@@ -396,6 +398,50 @@ template {
   }
   .donation__image {
     margin: 0;
+  }
+  .donation .wrapper {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 740px) {
+  .donation__content {
+    flex-direction: column-reverse;
+    margin: 44px 0 41px 0;
+    padding: 0;
+  }
+  .donation__info {
+    margin: auto;
+    text-align: center;
+  }
+  .donation__info h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin: 20px 0;
+    letter-spacing: 0;
+  }
+  .donation__button {
+    width: 281px;
+    height: 43px;
+  }
+  .donation__italic {
+    text-align: justify;
+    padding: 0 10px 29px 10px;
+  }
+  .donation__image img {
+    width: 88%;
+    display: block;
+    margin: auto;
+  }
+  .icon-card__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .button_colored {
+    margin: auto;
   }
 }
 .collection {
@@ -527,6 +573,9 @@ template {
     line-height: 3.2rem;
     text-align: center;
   }
+  .collections__name {
+    margin-bottom: 42px;
+  }
   .collections {
     margin: 42px 0 42px 0;
     min-width: 100%;
@@ -534,8 +583,21 @@ template {
   .second-card {
     display: none;
   }
-  .collection-card {
-    width: 100%;
+  .collection .wrapper {
+    padding: 0 10px;
+  }
+  .arrow_left {
+    position: absolute;
+    left: 59px;
+    top: 561px;
+  }
+  .arrow_right {
+    position: absolute;
+    right: 59px;
+    top: 561px;
+  }
+  .collections-button {
+    margin-top: 114px;
   }
 }
 .header-promo {
@@ -729,11 +791,11 @@ template {
   }
 }
 .help-content {
-  margin: 80px 0 100px 0;
+  margin: 80px 0 97px 0;
 }
 .help-content__head {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 
 .help-layout {
@@ -742,7 +804,7 @@ template {
   justify-content: center;
   margin: 0 auto;
   gap: 120px;
-  row-gap: 55px;
+  row-gap: 52px;
   text-align: center;
 }
 
@@ -772,6 +834,32 @@ template {
     margin-bottom: 61px;
   }
 }
+@media (max-width: 740px) {
+  .help .wrapper {
+    padding: 0 15px;
+  }
+  .help-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .help-icons__description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 16px 0 0 0;
+  }
+  .help-content {
+    margin: 43px 0 40px 0;
+  }
+  .help-content__head {
+    margin-bottom: 42px;
+  }
+  .help-icons__icon img {
+    height: 50px;
+    width: 50px;
+  }
+}
 .footer__content {
   display: flex;
   justify-content: space-between;
@@ -795,7 +883,7 @@ template {
   color: #F1CDB3;
 }
 .footer-address__information:last-child {
-  margin: 32px 0 60px 0;
+  margin: 30px 0 60px 0;
 }
 
 .footer-contacts__header {
@@ -805,7 +893,7 @@ template {
 
 .footer-address__header {
   color: #FFFFFF;
-  margin: 16px 0 32px 0;
+  margin: 16px 0 34px 0;
 }
 
 .footer_flex {
@@ -867,6 +955,37 @@ template {
   }
   .footer-address__information:last-child {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 740px) {
+  .footer .wrapper {
+    padding: 0 10px;
+  }
+  .footer__content {
+    margin: 30px auto 0 auto;
+    text-align: center;
+    width: 100%;
+    gap: 39px;
+  }
+  .footer_flex {
+    justify-content: center;
+  }
+  .footer-address__header {
+    margin: 0 0 39px 0;
+    padding: 0 5px;
+  }
+  .footer-address__information:last-child {
+    margin: 38px 0 0 0;
+  }
+  .footer-address__information {
+    justify-content: flex-start;
+  }
+  .address {
+    text-align: start;
+  }
+  .footer-photo img {
+    width: 86%;
+    height: auto;
   }
 }
 .header__wrapper {
@@ -1132,6 +1251,14 @@ h3 {
   line-height: 4.5rem;
   letter-spacing: 0.06em;
 }
+@media (max-width: 740px) {
+  h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+  }
+}
 
 h4 {
   font-style: normal;
@@ -1148,7 +1275,6 @@ h5 {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.7rem;
-  letter-spacing: 0.06em;
 }
 
 .button {
