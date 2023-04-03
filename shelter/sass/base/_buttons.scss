@@ -25,7 +25,8 @@
     background-color: $color-background-grey;
 
   }
-  @media (hover: hover){
+
+  @media (hover: hover) {
     &:hover {
       cursor: pointer;
       background: $color-button-hover;
@@ -42,7 +43,8 @@
 
 
 }
-@media (hover: hover){
+
+@media (hover: hover) {
   .arrow_less:hover, .arrow_less-less:hover {
     border: 2px solid $color-text;
     background-color: $color-background-grey;
@@ -59,10 +61,12 @@
 
 .arrow_left {
   padding: 13px 15px;
+  background-color: #F6F6F6;
 }
 
 .arrow_right {
   padding: 13px 15px;
+  background-color: #F6F6F6;
 }
 
 .arrow_number {
@@ -72,7 +76,6 @@
 }
 
 
-
 .arrow_less, .arrow_more {
   padding: 13px 18px;
 }
@@ -80,7 +83,8 @@
 .arrow_less-less, .arrow_more-more {
   padding: 13px 12px;
 }
-.arrow_more, .arrow_more-more{
+
+.arrow_more, .arrow_more-more {
   background-color: #F6F6F6;
 }
 

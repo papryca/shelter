@@ -76,7 +76,7 @@
 .donation__image {
   margin: 11px 30px 10px 0;
   max-width: 505px;
-  height: 261px;
+  height: auto;
 }
 
 @include media-tablet {
@@ -85,7 +85,7 @@
   }
   .donation__content {
     flex-direction: column-reverse;
-    margin: 80px 101px 100px 102px;
+    margin: 80px 101px 97px 102px;
     padding: 0 20px;
   }
   .donation__info {
