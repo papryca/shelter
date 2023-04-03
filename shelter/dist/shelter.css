@@ -330,12 +330,14 @@ template {
   text-decoration: none;
   font-style: italic;
 }
-.donation__button:hover {
-  cursor: pointer;
-}
-.donation__button:hover .icon-card__link {
-  color: #292929;
-  cursor: pointer;
+@media (hover: hover) {
+  .donation__button:hover {
+    cursor: pointer;
+  }
+  .donation__button:hover .icon-card__link {
+    color: #292929;
+    cursor: pointer;
+  }
 }
 .donation__button:active .icon-card__link {
   border-bottom: 2px #545454 solid;
@@ -379,6 +381,8 @@ template {
 
 .donation__image {
   margin: 11px 30px 10px 0;
+  max-width: 505px;
+  height: 261px;
 }
 
 @media (max-width: 1140px) {
@@ -387,11 +391,11 @@ template {
   }
   .donation__content {
     flex-direction: column-reverse;
-    margin: 80px 101px 98px 102px;
+    margin: 80px 101px 100px 102px;
     padding: 0 20px;
   }
   .donation__info {
-    margin: 0 62.5px 46px 62.5px;
+    margin: 0 62.5px 48px 62.5px;
   }
   .donation__info h5 {
     margin: 19px 0;
@@ -403,7 +407,7 @@ template {
     padding: 0 10px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .donation__content {
     flex-direction: column-reverse;
     margin: 44px 0 41px 0;
@@ -500,6 +504,9 @@ template {
   max-width: 270px;
   height: 270px;
 }
+.collection-card__photo img {
+  width: 100%;
+}
 
 .collection-card p {
   align-items: center;
@@ -525,19 +532,21 @@ template {
   transition: all 0.3s;
   color: rebeccapurple;
 }
-.collection-card:hover {
-  transition: all 0.3s;
-  cursor: pointer;
-  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
-  background-color: #FFFFFF;
-}
-.collection-card:hover .button {
-  cursor: pointer;
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
-}
-.collection-card:hover .change-card {
-  background-color: rebeccapurple;
+@media (hover: hover) {
+  .collection-card:hover {
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background-color: #FFFFFF;
+  }
+  .collection-card:hover .button {
+    cursor: pointer;
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+  }
+  .collection-card:hover .change-card {
+    background-color: rebeccapurple;
+  }
 }
 
 .layout-4-column {
@@ -552,6 +561,9 @@ template {
 }
 
 @media (max-width: 1140px) {
+  .collection-card__photo {
+    margin: auto;
+  }
   .collections {
     margin: 80px auto 100px auto;
     min-width: 708px;
@@ -562,10 +574,30 @@ template {
   .layout-3-column {
     justify-content: space-around;
     gap: 40px;
-    margin: 0 150px;
+    margin: 0 64px;
+  }
+  .layout-4-column {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    padding: 0 64px;
+  }
+  .collections__name_pets {
+    margin: 82px 0 31px 0;
+  }
+  .collections__name_pets h3 {
+    margin-bottom: 0;
+  }
+  .collection-buttons-pets {
+    padding-top: 38px;
+  }
+  .last-card:last-child {
+    display: none;
+  }
+  .collections-pets {
+    margin-bottom: 77px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .collections__name h3 {
     font-style: normal;
     font-weight: 400;
@@ -598,6 +630,28 @@ template {
   }
   .collections-button {
     margin-top: 114px;
+  }
+  .collections__name_pets {
+    margin-top: 0;
+  }
+  .collections-pets {
+    margin-top: 43px;
+  }
+  .last-card {
+    display: none;
+  }
+  .latest-card {
+    display: none;
+  }
+  .layout-4-column_pets {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 15px;
+  }
+  .collection-buttons-pets {
+    gap: 10px;
+  }
+  .collection-buttons-pets {
+    padding-top: 40px;
   }
 }
 .header-promo {
@@ -679,7 +733,7 @@ template {
     max-width: none;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .promo-content {
     flex-direction: column;
   }
@@ -755,7 +809,7 @@ template {
     margin: 80px 68px 0 69px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .description__text {
     width: 100%;
   }
@@ -834,7 +888,7 @@ template {
     margin-bottom: 61px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .help .wrapper {
     padding: 0 15px;
   }
@@ -921,15 +975,19 @@ template {
 .footer-photo img {
   width: 300px;
   height: 310px;
+  display: block;
+  margin: auto;
 }
 
 .email, .address {
   margin: 0;
   transition: all 0.3s;
 }
-.email:hover, .address:hover {
-  color: #F6F6F6;
-  cursor: pointer;
+@media (hover: hover) {
+  .email:hover, .address:hover {
+    color: #F6F6F6;
+    cursor: pointer;
+  }
 }
 .email:active, .address:active {
   border-bottom: 2px solid #F6F6F6;
@@ -957,12 +1015,12 @@ template {
     margin-bottom: 0;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .footer .wrapper {
     padding: 0 10px;
   }
   .footer__content {
-    margin: 30px auto 0 auto;
+    margin: 32px auto 0 auto;
     text-align: center;
     width: 100%;
     gap: 39px;
@@ -1011,7 +1069,7 @@ template {
 .navigation {
   display: flex;
   list-style: none;
-  margin-top: 15px;
+  margin-top: 13px;
 }
 .navigation__header a {
   text-decoration: none;
@@ -1025,9 +1083,11 @@ template {
   font-size: 1.5rem;
   line-height: 2.4rem;
 }
-.navigation__header a:hover {
-  color: #FAFAFA;
-  cursor: pointer;
+@media (hover: hover) {
+  .navigation__header a:hover {
+    color: #FAFAFA;
+    cursor: pointer;
+  }
 }
 .navigation__header a:active {
   border-bottom: 3px #F1CDB3 solid;
@@ -1039,27 +1099,36 @@ template {
   padding-bottom: 3px;
   color: #FAFAFA;
 }
-.navigation__header_line a:hover {
-  cursor: default;
+@media (hover: hover) {
+  .navigation__header_line a:hover {
+    cursor: default;
+  }
 }
 .navigation__header_last a:last-child {
   margin-right: 0;
+}
+
+.navigation-pets {
+  margin-top: 18px;
 }
 
 .navigation__header_pets a {
   color: #545454;
   transition: all 0.3s;
 }
-.navigation__header_pets a:hover {
-  color: #292929;
-  cursor: pointer;
+@media (hover: hover) {
+  .navigation__header_pets a:hover {
+    color: #292929;
+    cursor: pointer;
+  }
 }
 
-.navigation__header_pets:nth-child(2) a:hover {
-  cursor: default;
-  color: #545454;
+@media (hover: hover) {
+  .navigation__header_pets:nth-child(2) a:hover {
+    cursor: default;
+    color: #545454;
+  }
 }
-
 .logo_title {
   margin: 0;
   letter-spacing: 0.06em;
@@ -1094,7 +1163,7 @@ template {
   padding-bottom: 4px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .navigation {
     display: none;
   }
@@ -1113,6 +1182,9 @@ template {
     letter-spacing: 0.06em;
     text-align: center;
   }
+  .header__logo-black {
+    padding-bottom: 5px;
+  }
 }
 .wrapper {
   max-width: 1280px;
@@ -1125,7 +1197,7 @@ template {
     padding: 0 30px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .wrapper {
     padding: 0 20px;
   }
@@ -1157,24 +1229,33 @@ template {
   color: #CDCDCD;
   background-color: #F6F6F6;
 }
-.button:hover {
-  cursor: pointer;
-  background: #FDDCC4;
-  border: 2px solid #FDDCC4;
-}
-.button_bordered-inactive:hover {
-  cursor: default;
+@media (hover: hover) {
+  .button:hover {
+    cursor: pointer;
+    background: #FDDCC4;
+    border: 2px solid #FDDCC4;
+  }
+  .button_bordered-inactive:hover {
+    cursor: default;
+  }
 }
 .button:active {
   box-shadow: 0 0 8px 3px #292929;
 }
 
-.arrow_less:hover, .arrow_less-less:hover {
-  border: 2px solid #CDCDCD;
-  background-color: #F6F6F6;
-  color: #CDCDCD;
+@media (hover: hover) {
+  .arrow_less:hover, .arrow_less-less:hover {
+    border: 2px solid #CDCDCD;
+    background-color: #F6F6F6;
+    color: #CDCDCD;
+  }
+  .arrow_number:hover {
+    cursor: default;
+    background-color: #F1CDB3;
+    color: #292929;
+    border: 2px solid #F1CDB3;
+  }
 }
-
 .arrow_left {
   padding: 13px 15px;
 }
@@ -1189,19 +1270,16 @@ template {
   color: #292929;
 }
 
-.arrow_number:hover {
-  cursor: default;
-  background-color: #F1CDB3;
-  color: #292929;
-  border: 2px solid #F1CDB3;
-}
-
 .arrow_less, .arrow_more {
   padding: 13px 18px;
 }
 
 .arrow_less-less, .arrow_more-more {
   padding: 13px 12px;
+}
+
+.arrow_more, .arrow_more-more {
+  background-color: #F6F6F6;
 }
 
 * {
@@ -1251,7 +1329,7 @@ h3 {
   line-height: 4.5rem;
   letter-spacing: 0.06em;
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   h3 {
     font-style: normal;
     font-weight: 400;
@@ -1300,7 +1378,7 @@ h5 {
   height: 22px;
   position: relative;
 }
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .burger {
     display: block;
   }
@@ -1309,6 +1387,12 @@ h5 {
   .burger {
     display: block;
   }
+}
+.burger_pets {
+  margin-top: 5px;
+}
+.burger_pets .burger__line, .burger_pets:before, .burger_pets:after {
+  background-color: #000000;
 }
 .burger:before {
   top: 0;

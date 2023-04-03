@@ -27,7 +27,8 @@
 .navigation {
   display: flex;
   list-style: none;
-  margin-top: 15px;
+  margin-top: 13px;
+
 
 
   &__header a {
@@ -38,11 +39,13 @@
     margin-right: 36px;
     font-family: 'Arial', sans-serif;
     @include font($size: 1.5rem, $height: 2.4rem);
-
-    &:hover {
-      color: $color-link-active-hover;
-      cursor: pointer;
+    @media (hover: hover){
+      &:hover {
+        color: $color-link-active-hover;
+        cursor: pointer;
+      }
     }
+
 
 
     &:active {
@@ -57,10 +60,12 @@
     padding-top: 0;
     padding-bottom: 3px;
     color: $color-link-active-hover;
-
-    &:hover {
-      cursor: default;
+    @media (hover: hover){
+      &:hover {
+        cursor: default;
+      }
     }
+
 
   }
 
@@ -70,22 +75,28 @@
     }
   }
 }
-
+.navigation-pets {
+  margin-top: 18px;
+}
 .navigation__header_pets a {
   color: $color-header;
   transition: all 0.3s;
+  @media (hover: hover){
+    &:hover {
+      color: $color-button;
+      cursor: pointer;
 
-  &:hover {
-    color: $color-button;
-    cursor: pointer;
+    }
+  }
 
+}
+@media (hover: hover){
+  .navigation__header_pets:nth-child(2) a:hover {
+    cursor: default;
+    color: $color-header;
   }
 }
 
-.navigation__header_pets:nth-child(2) a:hover {
-  cursor: default;
-  color: $color-header;
-}
 
 .logo_title {
   margin: 0;
@@ -130,10 +141,11 @@
   .header__navigation {
     display: none;
   }
-  .promo-content{
-    &__information{
+  .promo-content {
+    &__information {
       width: 100%;
     }
+
     &__title {
       font-family: 'Georgia', sans-serif;
       @include font($size: 2.5rem, $height: 3.2rem);
@@ -141,6 +153,9 @@
       text-align: center;
 
     }
+  }
+  .header__logo-black{
+    padding-bottom: 5px;
   }
 
 }

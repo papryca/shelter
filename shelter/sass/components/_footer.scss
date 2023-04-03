@@ -61,17 +61,21 @@
 .footer-photo img {
   width: 300px;
   height: 310px;
+  display: block;
+  margin: auto;
 }
 
 .email, .address {
   margin: 0;
   transition: all 0.3s;
+  @media (hover: hover){
+    &:hover {
+      color: #F6F6F6;
+      cursor: pointer;
 
-  &:hover {
-    color: #F6F6F6;
-    cursor: pointer;
-
+    }
   }
+
 
   &:active {
     border-bottom: 2px solid #F6F6F6;
@@ -108,7 +112,7 @@
   }
   .footer {
     &__content {
-      margin: 30px auto 0 auto;
+      margin: 32px auto 0 auto;
       text-align: center;
       width: 100%;
       gap: 39px;
@@ -133,6 +137,7 @@
   .footer-photo img{
     width: 86%;
     height: auto;
+
   }
 }
 
