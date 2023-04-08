@@ -1,39 +1,74 @@
-.help-content{
- margin: 80px 0 100px 0;
-  &__head{
+.help-content {
+  margin: 80px 0 97px 0;
+
+  &__head {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 
   }
 }
-.help-layout{
+
+.help-layout {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0 80px;
+  margin: 0 auto;
   gap: 120px;
-  row-gap: 55px;
-
+  row-gap: 52px;
   text-align: center;
 }
 
 
-.help-icons__description p{
-  @include font($size:2rem,$height:2.3rem);
+.help-icons__description p {
+  @include font($size: 2rem, $height: 2.3rem);
   color: $color-header;
   font-family: 'Georgia', sans-serif;
   letter-spacing: 0.06em;
   margin: 23px 0 4px 0;
 }
-.help-layout{
-  @include media-tablet {
+
+@include media-tablet {
+  .help-layout {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin: 0;
+    row-gap: 54px;
+  }
+  .help-content {
+    margin: 80px 39px 100px 39px;
+
+    &__head {
+      margin-bottom: 61px;
+    }
   }
 }
-.help-content{
-  @include media-tablet {
-    margin: 80px 69px 100px 69px;
+
+@include media-mobile {
+  .help .wrapper {
+    padding: 0 15px;
+  }
+  .help-layout {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .help-icons__description p {
+    @include font($size: 1.5rem, $height: 1.7rem);
+    margin: 16px 0 0 0;
+
+  }
+  .help-content {
+    margin: 43px 0 40px 0;
+    &__head {
+      margin-bottom: 42px;
+    }
+  }
+  .help-icons__icon img{
+    height: 50px;
+    width: 50px;
   }
 }
+
+
 

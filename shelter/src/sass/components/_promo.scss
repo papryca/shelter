@@ -9,22 +9,22 @@
   justify-content: space-between;
   position: relative;
 
-  &__picture img{
+  &__picture img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 698px;
-    height: 728px;
+    width: 58%;
+    height: auto;
     margin-top: 90px;
   }
 
   &__information {
-    max-width: 460px;
-    margin: 253px 42px 243px 0;
+    max-width: 39%;
+    margin: 253px 42px 258px 0;
   }
 
   &__text {
-    max-width: 460px;
+    max-width: 100%;
     color: $color-text;
     @include font($size: 1.5rem, $height: 2.4rem);
     margin: 42px 0 0 0;
@@ -39,54 +39,95 @@
   }
 
   &__button {
-    margin-top: 43px;
+    margin-top: 57px;
   }
 
 }
 
-.promo-content {
-  @include media-tablet {
+@include media-tablet {
+  .promo-content {
     flex-direction: column;
-  }
-  &__button{
-    @include media-tablet{
-      margin-top: 42px;
 
+    &__button {
+      margin-top: 42px;
       width: 100%;
       text-align: center;
-    }
-    .button{
-      display: inline-block;
-    }
 
-  }
-
-  &__picture {
-    @include media-tablet {
-      width: 569px;
-      height: 593px;
-    }
-    img{
-      @include media-tablet {
-      width: 569px;
-      height: 593px;
-        margin-top: 100px;
-    }
+      .button {
+        display: inline-block;
+      }
 
     }
 
-  }
-  &__information {
-    @include media-tablet {
+    &__picture {
+      width: auto;
+      height: auto;
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 2px 0 0 140px;
+      position: static;
+
+    }
+
+    &__information {
+      width: 65%;
       margin: 60px auto 100px auto;
     }
+
+    .promo-content__text {
+      max-width: none;
+    }
+
+    .promo-content__information {
+      max-width: none;
+    }
   }
 
 }
-.header-promo {
-  @include media-tablet {
-    padding: 30px 30px 0 30px;
+
+@include media-mobile {
+  .promo-content {
+    flex-direction: column;
+  }
+
+  .promo-content__text {
+    width: auto;
+    text-align: center;
+  }
+
+  .promo-content__information {
+    margin-bottom: 0;
+  }
+
+  .promo .promo__wrapper {
+    padding: 0 10px;
+  }
+  .promo-content__picture {
+    max-width: 86%;
+    height: auto;
+    margin: 108px 0 0 40px;
+
+  }
+
+  .promo-content__picture img {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+
+  }
+  .promo-content__title{
+    margin: auto;
   }
 }
+
+
+
+
+
+
 
 

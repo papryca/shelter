@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="dist/shelter.css" rel="stylesheet">
-
-    <link rel="icon" href="src/images/favicon/icons8-домашние-животные-96.png" type="image/x-icon">
+    <script defer src="index.js"></script>
+    <link rel="icon" href="images/favicon/icons8-домашние-животные-96.png" type="image/x-icon">
     <title>Pets</title>
 </head>
 <body>
@@ -19,8 +19,11 @@
 
                 <p class="logo logo_subtitle logo_subtitle_black">Shelter for pets in Boston</p>
             </div>
+            <span class="burger burger_pets">
+                <span class="burger__line "></span>
+            </span>
             <nav class="header__navigation">
-                <ul class="navigation">
+                <ul class="navigation navigation-pets">
                     <li class="navigation__header navigation__header_pets">
                         <a href="shelter.html">About the shelter</a>
                     </li>
@@ -45,13 +48,13 @@
 
 <section class="collection" id="collection">
     <div class="wrapper ">
-        <div class="collections">
+        <div class="collections collections-pets">
             <div class="collections__name collections__name_pets ">
                 <h3>Our friends who<br>
                     are looking for a house</h3>
             </div>
 
-            <div class="layout-4-column layout">
+            <div class="layout-4-column layout-4-column_pets">
 
                 <div class="collection-card" data-pet-id="1">
                     <div class="collection-card__photo">
@@ -81,7 +84,7 @@
                     </div>
 
                 </div>
-                <div class="collection-card "  data-pet-id="4">
+                <div class="collection-card latest-card" data-pet-id="4">
                     <div class="collection-card__photo">
                         <img class="collection-card__image" src="src/images/looking-house/pets-sophia.png" alt="pet">
                     </div>
@@ -90,7 +93,7 @@
                         <button class="button button_bordered">Learn more</button>
                     </div>
                 </div>
-                <div class="collection-card "  data-pet-id="5">
+                <div class="collection-card latest-card" data-pet-id="5">
                     <div class="collection-card__photo">
                         <img class="collection-card__image" src="src/images/looking-house/pets-timmy.png" alt="pet">
                     </div>
@@ -99,7 +102,7 @@
                         <button class="button button_bordered">Learn more</button>
                     </div>
                 </div>
-                <div class="collection-card "  data-pet-id="6">
+                <div class="collection-card latest-card" data-pet-id="6">
                     <div class="collection-card__photo">
                         <img class="collection-card__image" src="src/images/looking-house/pets-charly.png" alt="pet">
                     </div>
@@ -110,7 +113,7 @@
 
                 </div>
 
-                <div class="collection-card " data-pet-id="7">
+                <div class="collection-card last-card" data-pet-id="7">
                     <div class="collection-card__photo ">
                         <img class="collection-card__image" src="src/images/looking-house/pets-scarlet.png" alt="pet">
                     </div>
@@ -120,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="collection-card "  data-pet-id="8">
+                <div class="collection-card last-card" data-pet-id="8">
                     <div class="collection-card__photo">
                         <img class="collection-card__image" src="src/images/looking-house/pets-freddie.png" alt="pet">
                     </div>
@@ -133,7 +136,7 @@
 
 
             </div>
-            <div class="collection-buttons">
+            <div class="collection-buttons collection-buttons-pets">
                 <div class="arrow">
                     <button class="button button_bordered-inactive arrow_less-less">
                         <span>&lt;&lt;</span>
@@ -167,7 +170,7 @@
     <div class="wrapper">
         <div class="footer__content">
             <div class="footer-contacts">
-                <h3 class="footer-contacts__header">For questions<br> and suggestions</h3>
+                <h3 class="footer-contacts__header">For questions and suggestions</h3>
                 <div class="footer-contacts__connection footer_flex">
                     <a class="icon-envelope" href="mailto:email@shelter.com">
                         <img src="src/images/address/icon-email.png" alt="address">
@@ -187,7 +190,7 @@
 
             </div>
             <div class="footer-address">
-                <h3 class="footer-address__header">We are waiting<br> for your visit</h3>
+                <h3 class="footer-address__header">We are waiting for your visit</h3>
                 <div class="footer-address__information footer_flex">
                     <a href="https://goo.gl/maps/5vjao4V89S2XqeJP8" target="_blank">
                         <img src="src/images/address/icon-marker.png" alt="address">
