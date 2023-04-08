@@ -517,7 +517,7 @@ template {
 }
 
 .header-promo {
-  background: url(../images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
+  background: url(../src/images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
   padding-top: 30px;
 }
 
@@ -704,7 +704,7 @@ template {
 }
 
 .footer {
-  background: url(../images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
+  background: url(../src/images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
 }
 
 .footer-contacts {
@@ -994,6 +994,10 @@ body {
   font-family: "Georgia", sans-serif;
 }
 
+.body-scroll {
+  overflow: hidden;
+}
+
 p {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -1052,6 +1056,99 @@ h5 {
   font-size: 1.7rem;
   line-height: 2.21rem;
   letter-spacing: 0.06em;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 9px;
+}
+
+.modal__close-icon {
+  position: absolute;
+  cursor: pointer;
+  top: -50px;
+  right: -43px;
+  border: 2px solid #F1CDB3;
+  padding: 14px 19px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+.modal__close-icon:hover {
+  cursor: pointer;
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
+.collection-card_modal {
+  max-width: 900px;
+  height: 500px;
+  display: flex;
+  transition: all 0.3s;
+  gap: 29px;
+  border-radius: 9px;
+}
+.collection-card_modal:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.collection-card__photo-modal {
+  width: 500px;
+  height: 500px;
+}
+
+.collection-card__image-modal {
+  width: 100%;
+  height: auto;
+}
+
+.collection-card__content {
+  width: 40%;
+  padding: 50px 20px 18px 0;
+}
+
+.collection-card__content h3 {
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+.collection-card__content h4 {
+  margin: 10px auto 40px auto;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.06em;
+}
+
+.collection-card__content-pet {
+  color: #000000;
+  letter-spacing: 0.06em;
+  padding-bottom: 23px;
+  margin-bottom: 0;
+  width: 350px;
+}
+
+.collection-card__description h5 {
+  color: rgb(0, 0, 0);
+  margin: 10px;
+  letter-spacing: 0.06em;
+}
+
+.collection-card__description {
+  padding-inline-start: 5px;
+  text-decoration-color: #F1CDB3;
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=shelter.css.map */

@@ -10,6 +10,9 @@ body {
   font-size: 1.6rem;
   font-family: 'Georgia', sans-serif;
 }
+.body-scroll{
+  overflow: hidden;
+}
 p{
   font-family: 'Arial', sans-serif;
   @include font($size:1.5rem,$height:1.7rem)
