@@ -21,27 +21,30 @@
 
                 <p class="logo_subtitle">Shelter for pets in Boston</p>
             </div>
-            <span class="burger burger-rotate">
-                <span class="burger__line"></span>
-            </span>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li class="navigation__header navigation__header_line">
-                        <a href="#">About the shelter</a>
-                    </li>
-                    <li class="navigation__header">
-                        <a href="pets.html">Our
-                            pets</a>
-                    </li>
-                    <li class="navigation__header">
-                        <a href="#help">Help the shelter</a>
-                    </li>
-                    <li class="navigation__header navigation__header_last">
-                        <a href="#footer">Contacts</a>
-                    </li>
-                </ul>
+            <div class="_header__navigation ">
+                <div class="_header__navigation-pets"></div>
+                <span class="burger burger-rotate">
+                    <span class="burger__line"></span>
+                </span>
+                <nav class="header__navigation header__navigation_mobile_hidden">
+                    <ul class="navigation navigation_burger">
+                        <li class="navigation__header navigation__header-burger navigation__header_line">
+                            <a class="navigation__header-link" href="#">About the shelter</a>
+                        </li>
+                        <li class="navigation__header navigation__header-burger navigation__header-burger-pets ">
+                            <a class="navigation__header-link" href="pets.html">Our pets</a>
+                        </li>
+                        <li class="navigation__header navigation__header-burger">
+                            <a class="navigation__header-link" href="#help">Help the shelter</a>
+                        </li>
+                        <li class="navigation__header navigation__header-burger navigation__header_last">
+                            <a class="navigation__header-link" href="#footer">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
 
-            </nav>
+            </div>
+
         </div>
 
     </header>
@@ -128,7 +131,8 @@
                 </div>
                 <div class="collection-card last-card" data-pet-id="3">
                     <div class="collection-card__photo">
-                        <img class="collection-card__image change-card" src="src/images/looking-house/pets-woody.png" alt="pet">
+                        <img class="collection-card__image change-card" src="src/images/looking-house/pets-woody.png"
+                             alt="pet">
                     </div>
                     <p>Woody</p>
                     <div class=collection__button>

@@ -4,11 +4,17 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+.not-scroll{
+  overflow-y: hidden;
 }
 
 body {
   font-size: 1.6rem;
   font-family: 'Georgia', sans-serif;
+  overflow-x: hidden;
 }
 .body-scroll{
   overflow: hidden;

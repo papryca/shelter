@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="dist/shelter.css" rel="stylesheet">
     <script defer src="index.js"></script>
-    <link rel="icon" href="images/favicon/icons8-домашние-животные-96.png" type="image/x-icon">
+    <link rel="icon" href="src/images/favicon/icons8-домашние-животные-96.png" type="image/x-icon">
     <title>Pets</title>
 </head>
 <body>
@@ -19,26 +19,29 @@
 
                 <p class="logo logo_subtitle logo_subtitle_black">Shelter for pets in Boston</p>
             </div>
-            <span class="burger burger_pets">
+            <div class="_header__navigation ">
+                <div class="_header__navigation-pets"></div>
+                <span class="burger burger_pets">
                 <span class="burger__line "></span>
-            </span>
-            <nav class="header__navigation">
-                <ul class="navigation navigation-pets">
-                    <li class="navigation__header navigation__header_pets">
-                        <a href="shelter.html">About the shelter</a>
-                    </li>
-                    <li class="navigation__header navigation__header_line navigation__header_pets">
-                        <a href="#">Our pets</a>
-                    </li>
-                    <li class="navigation__header navigation__header_pets">
-                        <a href="shelter.html#help">Help the shelter</a>
-                    </li>
-                    <li class="navigation__header navigation__header_pets navigation__header_last">
-                        <a href="#footer">Contacts</a>
-                    </li>
-                </ul>
+                </span>
+                <nav class="header__navigation header__navigation_mobile_hidden navigation__header_pets-menu">
+                    <ul class="navigation navigation-pets">
+                        <li class="navigation__header navigation__header_pets ">
+                            <a class="navigation__header_pets-link" href="shelter.html">About the shelter</a>
+                        </li>
+                        <li class="navigation__header navigation__header_line navigation__header_pets ">
+                            <a class="navigation__header_pets-link" href="#">Our pets</a>
+                        </li>
+                        <li class="navigation__header navigation__header_pets navigation__header_pets-menu">
+                            <a class="navigation__header_pets-link" href="shelter.html#help">Help the shelter</a>
+                        </li>
+                        <li class="navigation__header navigation__header_pets navigation__header_last navigation__header_pets-menu">
+                            <a class="navigation__header_pets-link" href="#footer">Contacts</a>
+                        </li>
+                    </ul>
 
-            </nav>
+                </nav>
+            </div>
         </div>
 
     </div>

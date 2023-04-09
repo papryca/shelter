@@ -1,5 +1,6 @@
 import {Card} from "./js/Card";
 import {Modal} from "./js/Modal";
+import {Burger} from "./js/Burger"
 
 const pets = [
     {
@@ -103,6 +104,7 @@ const pets = [
 
 window.onload = function () {
     addCardClickHandler();
+    openBurgerNav();
 }
 
 const addCardClickHandler = () => {
@@ -123,4 +125,9 @@ const generateCardModal = (id) => {
 
     modal.buildModalCard(content);
     modal.openModal();
+}
+
+const openBurgerNav = () => {
+    let navigation = new Burger();
+    navigation.openBurger();
 }
