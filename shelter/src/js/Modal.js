@@ -10,6 +10,7 @@ export class Modal {
         this.appendModalCardElements();
     }
 
+
     createDomNode(node, element, ...classes) {
         node = document.createElement(element);
         node.classList.add(...classes);
@@ -28,7 +29,8 @@ export class Modal {
 
     openModal() {
         document.body.append(this.overlay);
-        document.body.classList.add(".body-scroll");
+        const htmlScroll = document.querySelector('html');
+        htmlScroll .classList.add("body-scroll");
     }
 
     closeEvent() {
@@ -46,7 +48,8 @@ export class Modal {
             close.contains("modal__close-icon-cross")
         ) {
             document.querySelector('.overlay').remove();
-            document.body.classList.remove(".body-scroll");
+            const htmlScroll = document.querySelector('html');
+            htmlScroll .classList.remove("body-scroll");
         }
     }
 }
