@@ -32,7 +32,7 @@ const pets = [
     {
         "id": 3,
         "name": "Woody",
-        "img": "src/images/looking-house/pets-sophia.png",
+        "img": "src/images/looking-house/pets-woody.png",
         "type": "Dog",
         "breed": "Golden Retriever",
         "description": "Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.",
