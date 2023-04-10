@@ -35,21 +35,26 @@ export class Card {
         (template += `<h5 class = "collection-card__content-pet">${this.description}</h5>`)
 
         template += `<ul class="collection-card__description">`
+
         template += `<li class="collection-card__description-age">`
         this.age &&
-        (template += `<h5><strong>Age:</strong> ${this.age}</h5>`)
+        (template += `<h5><strong>Age: </strong>${this.age}</h5>`)
         template += `</li>`
+
+
         template += `<li class="collection-card__description-inoculations">`
         this.inoculations &&
         (template += `<h5><strong>Inoculations:</strong> ${this.inoculations}</h5>`)
         template += `</li>`
+
+
         template += `<li class="collection-card__description-diseases">`
         this.diseases &&
         (template += `<h5><strong>Diseases:</strong> ${this.diseases}</h5>`)
         template += `</li>`
-        template += `<li class="collection-card__description-parasites">`
-        this.diseases &&
-        (template += `<h5><strong>Parasites:</strong> ${this.diseases}</h5>`)
+        template += `<li class="collection-card__description-para">`
+        this.parasites &&
+        (template += `<h5><strong>Parasites:</strong> ${this.parasites}</h5>`)
         template += `</li>`
         template += `</ul>`
         template += `</div>`

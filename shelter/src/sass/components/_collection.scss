@@ -57,7 +57,8 @@
 .collection-card__photo {
   max-width: 270px;
   height: 270px;
-  img{
+
+  img {
     width: 100%;
   }
 }
@@ -82,9 +83,20 @@
 
 .collection-card {
   background-color: #FAFAFA;
-  transition: all 0.3s;
   color: rebeccapurple;
-  @media (hover: hover){
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+
+  &_remove {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+
+  &_hidden {
+    display: none;
+  }
+
+  @media (hover: hover) {
     &:hover {
       transition: all 0.3s;
       cursor: pointer;
@@ -104,7 +116,6 @@
   }
 
 
-
 }
 
 .layout-4-column {
@@ -120,7 +131,7 @@
 }
 
 @include media-tablet {
-  .collection-card__photo{
+  .collection-card__photo {
     margin: auto;
   }
   .collections {
@@ -143,19 +154,19 @@
     padding: 0 64px;
 
   }
-  .collections__name_pets{
+  .collections__name_pets {
     margin: 82px 0 31px 0;
   }
-.collections__name_pets h3{
-  margin-bottom: 0;
-}
-  .collection-buttons-pets{
+  .collections__name_pets h3 {
+    margin-bottom: 0;
+  }
+  .collection-buttons-pets {
     padding-top: 38px;
   }
-  .last-card:last-child{
+  .last-card:last-child {
     display: none;
   }
-  .collections-pets{
+  .collections-pets {
     margin-bottom: 77px;
   }
 }
@@ -165,7 +176,7 @@
     @include font($size: 2.5rem, $height: 3.2rem);
     text-align: center;
   }
-  .collections__name{
+  .collections__name {
     margin-bottom: 42px;
   }
   .collections {
@@ -175,7 +186,7 @@
   .second-card {
     display: none;
   }
-  .collection .wrapper{
+  .collection .wrapper {
     padding: 0 10px;
   }
   .arrow_left {
@@ -189,29 +200,29 @@
     right: 59px;
     top: 561px;
   }
-  .collections-button{
+  .collections-button {
     margin-top: 114px;
   }
-  .collections__name_pets{
+  .collections__name_pets {
     margin-top: 0;
   }
-  .collections-pets{
+  .collections-pets {
     margin-top: 43px;
   }
-  .last-card{
+  .last-card {
     display: none;
   }
-  .latest-card{
+  .latest-card {
     display: none;
   }
-  .layout-4-column_pets{
+  .layout-4-column_pets {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 15px;
   }
-  .collection-buttons-pets{
+  .collection-buttons-pets {
     gap: 10px;
   }
-  .collection-buttons-pets{
+  .collection-buttons-pets {
     padding-top: 40px;
   }
   .layout-3-column {

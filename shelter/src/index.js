@@ -1,6 +1,7 @@
 import {Card} from "./js/Card";
 import {Modal} from "./js/Modal";
 import {Burger} from "./js/Burger"
+import {Slider} from "./js/Slider"
 
 const pets = [
     {
@@ -42,7 +43,7 @@ const pets = [
     {
         "id": 4,
         "name": "Sophia",
-        "img": "src/images/looking-house/pets-katrine(1).png ",
+        "img": "src/images/looking-house/pets-sophia.png ",
         "type": "Dog",
         "breed": "Shih tzu",
         "description": "Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
@@ -66,7 +67,7 @@ const pets = [
     {
         "id": 6,
         "name": "Charly",
-        "img": "src/assets/images/looking-house/pets-charly.png",
+        "img": "src/images/looking-house/pets-charly.png",
         "type": "Dog",
         "breed": "Jack Russell Terrier",
         "description": "This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.",
@@ -105,6 +106,8 @@ const pets = [
 window.onload = function () {
     addCardClickHandler();
     openBurgerNav();
+    generateCard();
+
 }
 
 const addCardClickHandler = () => {
@@ -131,3 +134,8 @@ const openBurgerNav = () => {
     let navigation = new Burger();
     navigation.openBurger();
 }
+const generateCard = () =>{
+    let cards = new Slider();
+    cards.showCardSlider();
+}
+

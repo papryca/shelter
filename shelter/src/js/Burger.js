@@ -15,12 +15,13 @@ export class Burger {
         })
 
         function closeBtn() {
-            header.classList.remove('burger-open');
+            header.classList.toggle('burger-open');
             htmlScroll.classList.toggle('not-scroll');
             headerNavigationContainerPets.classList.toggle('_header__navigation-pets_open');
         }
 
         headerNavigationContainerPets.addEventListener('click', function (e) {
+            console.log('test');
             //if (headerNavigationContainerPetsOpen === e.target) {
                 closeBtn();
             //}

@@ -529,8 +529,16 @@ template {
 
 .collection-card {
   background-color: #FAFAFA;
-  transition: all 0.3s;
   color: rebeccapurple;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+.collection-card_remove {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+.collection-card_hidden {
+  display: none;
 }
 @media (hover: hover) {
   .collection-card:hover {
@@ -1215,11 +1223,11 @@ template {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    display: none;
+    transition: opacity 0.5s;
   }
   ._header__navigation-pets_open {
-    opacity: 1;
+    display: block;
   }
 }
 @media (max-width: 767px) {
@@ -1611,14 +1619,89 @@ h5 {
 
 .collection-card__description h5 {
   color: rgb(0, 0, 0);
-  margin: 10px;
+  margin: 10px 10px 10px 0;
   letter-spacing: 0.06em;
 }
 
 .collection-card__description {
   padding-inline-start: 5px;
   text-decoration-color: #F1CDB3;
-  padding-left: 5px;
+  padding-left: 14px;
+}
+
+.collection-card__description li {
+  color: #F1CDB3;
+}
+
+@media (max-width: 1140px) {
+  .modal__content {
+    width: 43%;
+  }
+  .modal {
+    width: 82%;
+  }
+  .collection-card_modal {
+    width: 630px;
+    height: 350px;
+    gap: 14px;
+  }
+  .collection-card__photo-modal {
+    width: 55%;
+  }
+  .collection-card__content {
+    padding: 10px 9px 37px 0;
+    width: 43%;
+  }
+  .collection-card__content-pet {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    width: auto;
+    padding-bottom: 0;
+  }
+  .collection-card__content h4 {
+    margin-bottom: 20px;
+  }
+  .collection-card__description h5 {
+    margin: 0 10px 5px 0;
+  }
+  .collection-card__description {
+    padding-top: 3px;
+  }
+}
+@media (max-width: 767px) {
+  .collection-card__image-modal {
+    display: none;
+  }
+  .collection-card_modal {
+    width: 240px;
+    height: 341px;
+  }
+  .modal__content {
+    width: 32%;
+  }
+  .modal {
+    width: 75%;
+  }
+  .collection-card__photo-modal {
+    width: 0;
+  }
+  .collection-card__content {
+    width: 100%;
+  }
+  .collection-card__content h3 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+  }
+  .collection-card__content h4 {
+    text-align: center;
+  }
+  .collection-card__description {
+    padding-top: 7px;
+  }
+  .collection-card_modal {
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=shelter.css.map */
