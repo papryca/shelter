@@ -21,7 +21,6 @@ export class Burger {
         }
 
         headerNavigationContainerPets.addEventListener('click', function (e) {
-            console.log('test');
 
                 closeBtn();
 

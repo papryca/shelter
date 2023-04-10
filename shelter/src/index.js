@@ -121,8 +121,6 @@ const addCardClickHandler = () => {
     });
 }
 const generateCardModal = (id) => {
-    console.log(['pet-id', pets[id]])
-    console.log(['pet-id-1', pets[id - 1]])
     let card = new Card(pets[id - 1]);
 
     let content = card.generateCard();

@@ -30,7 +30,7 @@ export class Modal {
     openModal() {
         document.body.append(this.overlay);
         const htmlScroll = document.querySelector('html');
-        htmlScroll .classList.add("body-scroll");
+        htmlScroll.classList.add("body-scroll");
     }
 
     closeEvent() {
@@ -49,7 +49,7 @@ export class Modal {
         ) {
             document.querySelector('.overlay').remove();
             const htmlScroll = document.querySelector('html');
-            htmlScroll .classList.remove("body-scroll");
+            htmlScroll.classList.remove("body-scroll");
         }
     }
 }
