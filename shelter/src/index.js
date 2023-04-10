@@ -2,6 +2,7 @@ import {Card} from "./js/Card";
 import {Modal} from "./js/Modal";
 import {Burger} from "./js/Burger"
 import {Slider} from "./js/Slider"
+import {Paginator} from "./js/Paginator"
 
 const pets = [
     {
@@ -107,7 +108,7 @@ window.onload = function () {
     addCardClickHandler();
     openBurgerNav();
     generateCard();
-
+    initPaginator();
 }
 
 const addCardClickHandler = () => {
@@ -120,6 +121,8 @@ const addCardClickHandler = () => {
     });
 }
 const generateCardModal = (id) => {
+    console.log(['pet-id', pets[id]])
+    console.log(['pet-id-1', pets[id - 1]])
     let card = new Card(pets[id - 1]);
 
     let content = card.generateCard();
@@ -134,8 +137,12 @@ const openBurgerNav = () => {
     let navigation = new Burger();
     navigation.openBurger();
 }
-const generateCard = () =>{
+const generateCard = () => {
     let cards = new Slider();
     cards.showCardSlider();
 }
 
+const initPaginator = () => {
+    let p = new Paginator(pets, generateCardModal);
+    p.paginate();
+}

@@ -21,6 +21,10 @@ export class Slider {
         const arrowRight = document.querySelector('.arrow_right');
         const arrowLeft = document.querySelector('.arrow_left');
 
+        if(!arrowRight || !arrowLeft) {
+            return;
+        }
+
         arrowRight.addEventListener('click', rightSlider);
 
         arrowLeft.addEventListener('click', leftSlider);

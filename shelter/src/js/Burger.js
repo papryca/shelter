@@ -22,9 +22,9 @@ export class Burger {
 
         headerNavigationContainerPets.addEventListener('click', function (e) {
             console.log('test');
-            //if (headerNavigationContainerPetsOpen === e.target) {
+
                 closeBtn();
-            //}
+
         });
 
         navigationName.forEach(link => {
@@ -36,6 +36,7 @@ export class Burger {
                 setTimeout(function () {
                     window.location.href = l.getAttribute("href");
                 }, 2000);
+                htmlScroll.classList.remove('not-scroll');
             })
         })
 
@@ -48,6 +49,7 @@ export class Burger {
                 setTimeout(function () {
                     window.location.href = g.getAttribute("href");
                 }, 2000);
+                htmlScroll.classList.remove('not-scroll');
             })
         })
     }
