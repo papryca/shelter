@@ -1,0 +1,23 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production && sass src/sass/shelter.scss dist/shelter.css",
+    "start": "open shelter.html",
+    "style": "sass --watch src/sass/shelter.scss dist/shelter.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "description": ""
+}
