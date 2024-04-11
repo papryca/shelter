@@ -1,0 +1,146 @@
+.donation {
+  background-color: $color-background-grey;
+
+  &__content {
+    margin: 80px 142px 88px 143px;
+    display: flex;
+  }
+
+  &__button {
+    border-radius: 9px;
+    display: flex;
+    @include font($size: 1.5rem, $height: 1.7rem);
+    gap: 15px;
+    width: 349px;
+    height: 43px;
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-style: italic;
+    @media (hover: hover){
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover .icon-card__link {
+        color: $color-button;
+        cursor: pointer;
+      }
+
+    }
+
+    &:active .icon-card__link {
+      border-bottom: 2px $color-header solid;
+      padding-bottom: 0;
+    }
+  }
+
+
+}
+
+.icon-card__link {
+
+  color: $color-header;
+  margin: 0;
+  @include font($size: 2.0rem, $height: 2.3rem);
+  letter-spacing: 0.06em;
+  padding-bottom: 2px;
+
+}
+
+.icon-card {
+  width: 30px;
+  height: 23px;
+}
+
+.donation__info h3 {
+  margin: 0;
+}
+
+.donation__info h5 {
+  margin: 20px 0;
+  letter-spacing: 0.06em;
+}
+
+.donation__italic {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #B2B2B2;
+  max-width: 100%;
+  line-height: 18px;
+}
+
+.donation__image {
+  margin: 11px 30px 10px 0;
+  max-width: 505px;
+  height: auto;
+}
+
+@include media-tablet {
+  .donation__italic{
+    max-width: none;
+  }
+  .donation__content {
+    flex-direction: column-reverse;
+    margin: 80px 101px 97px 102px;
+    padding: 0 20px;
+  }
+  .donation__info {
+    margin: 0 62.5px 48px 62.5px;
+
+    h5 {
+      margin: 19px 0;
+
+    }
+  }
+  .donation__image {
+    margin: 0;
+  }
+  .donation .wrapper{
+    padding: 0 10px;
+  }
+}
+@include media-mobile {
+  .donation{
+    &__content {
+      flex-direction: column-reverse;
+      margin: 44px 0 41px 0;
+      padding: 0;
+    }
+    &__info {
+      margin: auto;
+      text-align: center;
+
+    }
+    &__info h5 {
+      @include font($size: 1.5rem, $height: 2.4rem);
+        margin: 20px 0;
+      letter-spacing: 0;
+
+    }
+    &__button{
+      width: 281px;
+      height: 43px;
+    }
+    &__italic{
+      text-align: justify;
+      padding: 0 10px 29px 10px;
+    }
+    &__image img{
+      width: 88%;
+      display: block;
+      margin: auto;
+    }
+  }
+  .icon-card__link {
+    @include font($size: 1.5rem, $height: 1.7rem);
+  }
+  .button_colored{
+    margin: auto;
+  }
+
+
+}

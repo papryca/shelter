@@ -1,0 +1,25 @@
+@use "../../node_modules/normalize.css/normalize.css";
+//Abstracts
+@import "abstract/mixin";
+@import "abstract/constants";
+
+
+//Components
+@import "components/donation";
+@import "components/collection";
+@import "components/promo";
+@import "components/description";
+@import "components/hepl";
+@import "components/footer";
+
+
+//Layouts
+@import "layout/header";
+@import "layout/wrapper";
+
+
+//Base
+@import "base/buttons";
+@import "base/base";
+@import "base/burger";
+@import "base/modal";

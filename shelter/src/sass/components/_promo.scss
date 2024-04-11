@@ -1,0 +1,133 @@
+.header-promo {
+  background: url(../src/images/lay/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) #211F20;
+  padding-top: 30px;
+}
+
+.promo-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__picture img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 58%;
+    height: auto;
+    margin-top: 90px;
+  }
+
+  &__information {
+    max-width: 39%;
+    margin: 253px 42px 258px 0;
+  }
+
+  &__text {
+    max-width: 100%;
+    color: $color-text;
+    @include font($size: 1.5rem, $height: 2.4rem);
+    margin: 42px 0 0 0;
+  }
+
+  &__title {
+    max-width: 310px;
+    @include font($size: 4.4rem, $height: 5.7rem);
+    color: $color-header-main;
+    margin: 0;
+
+  }
+
+  &__button {
+    margin-top: 57px;
+  }
+
+}
+
+@include media-tablet {
+  .promo-content {
+    flex-direction: column;
+
+    &__button {
+      margin-top: 42px;
+      width: 100%;
+      text-align: center;
+
+      .button {
+        display: inline-block;
+      }
+
+    }
+
+    &__picture {
+      width: auto;
+      height: auto;
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      height: auto;
+      margin: 2px 0 0 140px;
+      position: static;
+
+    }
+
+    &__information {
+      width: 65%;
+      margin: 60px auto 100px auto;
+    }
+
+    .promo-content__text {
+      max-width: none;
+    }
+
+    .promo-content__information {
+      max-width: none;
+    }
+  }
+
+}
+
+@include media-mobile {
+  .promo-content {
+    flex-direction: column;
+  }
+
+  .promo-content__text {
+    width: auto;
+    text-align: center;
+  }
+
+  .promo-content__information {
+    margin-bottom: 0;
+  }
+
+  .promo .promo__wrapper {
+    padding: 0 10px;
+  }
+  .promo-content__picture {
+    max-width: 86%;
+    height: auto;
+    margin: 108px 0 0 40px;
+
+  }
+
+  .promo-content__picture img {
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: auto;
+
+  }
+  .promo-content__title{
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+

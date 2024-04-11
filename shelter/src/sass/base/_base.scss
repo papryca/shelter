@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+.not-scroll{
+  overflow-y: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Georgia', sans-serif;
+  overflow-x: hidden;
+}
+.body-scroll{
+  overflow: hidden;
+}
+p{
+  font-family: 'Arial', sans-serif;
+  @include font($size:1.5rem,$height:1.7rem)
+}
+h1{
+  color: $color-header;
+  @include font($size:3.5rem,$height:4.5rem);
+  letter-spacing: 0.06em;
+}
+h2{
+  font-family: 'Georgia', sans-serif;
+  @include font($size:4.4rem,$height:5.7rem);
+
+}
+h3{
+  color: $color-header;
+  @include font($size:3.5rem,$height:4.5rem);
+  letter-spacing: 0.06em;
+  @include media-mobile{
+    @include font($size: 2.5rem, $height: 3.2rem);
+  }
+}
+h4{
+  @include font($size:2rem,$height:2.3rem);
+  letter-spacing: 0.06em;
+}
+h5{
+  color: $color-header;
+  font-family: 'Georgia', sans-serif;
+  @include font($size:1.5rem,$height:1.7rem);
+
+}
+.button {
+@include font($size:1.7rem,$height:2.21rem);
+  letter-spacing: 0.06em;
+}
